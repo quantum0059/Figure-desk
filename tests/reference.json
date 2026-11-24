@@ -1,0 +1,102 @@
+[
+  {
+    "id": "pythagoras",
+    "revision": "reference-v1",
+    "source": "Reference",
+    "model": null,
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 240\"><title>Pythagoras’ theorem</title><polygon points=\"115,46 115,190 307,190\" fill=\"#d2eee5\" stroke=\"#187967\" stroke-width=\"4\"><animate attributeName=\"opacity\" values=\"1;0.35;1\" dur=\"2.8s\" repeatCount=\"indefinite\"/></polygon><line x1=\"115\" y1=\"174\" x2=\"131\" y2=\"174\" stroke=\"#233e4a\" stroke-width=\"3\"/><line x1=\"131\" y1=\"174\" x2=\"131\" y2=\"190\" stroke=\"#233e4a\" stroke-width=\"3\"/><text x=\"82\" y=\"126\" font-size=\"16\" fill=\"#233e4a\">a</text><text x=\"207\" y=\"215\" font-size=\"16\" fill=\"#233e4a\">b</text><text x=\"220\" y=\"110\" font-size=\"16\" fill=\"#233e4a\">c</text><text x=\"345\" y=\"112\" font-size=\"20\" fill=\"#233e4a\">a² + b² = c²</text><text x=\"345\" y=\"143\" font-size=\"15\" fill=\"#233e4a\">c = hypotenuse</text></svg>",
+    "checks": {
+      "Valid SVG": true,
+      "Inside canvas": true,
+      "Title & labels": true,
+      "Animated": true,
+      "Safe elements": true
+    },
+    "passed": true,
+    "inputTokens": null,
+    "outputTokens": null,
+    "cost": null,
+    "retries": 0,
+    "attempts": []
+  },
+  {
+    "id": "circle",
+    "revision": "reference-v1",
+    "source": "Reference",
+    "model": null,
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 240\"><title>Parts of a circle</title><circle cx=\"210\" cy=\"120\" r=\"78\" fill=\"#e4ecfd\" stroke=\"#375fbb\" stroke-width=\"3\"></circle><line x1=\"132\" y1=\"120\" x2=\"288\" y2=\"120\" stroke=\"#375fbb\" stroke-width=\"3\"/><line x1=\"210\" y1=\"120\" x2=\"257\" y2=\"58\" stroke=\"#187967\" stroke-width=\"3\"/><circle cx=\"210\" cy=\"120\" r=\"5\" fill=\"#233e4a\" stroke=\"none\" stroke-width=\"3\"></circle><text x=\"153\" y=\"144\" font-size=\"14\" fill=\"#233e4a\">diameter</text><text x=\"206\" y=\"82\" font-size=\"14\" fill=\"#233e4a\">radius</text><line x1=\"269\" y1=\"170\" x2=\"322\" y2=\"183\" stroke=\"#233e4a\" stroke-width=\"3\"/><text x=\"328\" y=\"190\" font-size=\"16\" fill=\"#233e4a\">circumference</text><line x1=\"214\" y1=\"120\" x2=\"328\" y2=\"103\" stroke=\"#233e4a\" stroke-width=\"3\"/><text x=\"334\" y=\"109\" font-size=\"16\" fill=\"#233e4a\">centre</text><circle cx=\"257\" cy=\"58\" r=\"5\" fill=\"#187967\" stroke=\"none\" stroke-width=\"3\"><animate attributeName=\"opacity\" values=\"1;0.35;1\" dur=\"2.8s\" repeatCount=\"indefinite\"/></circle></svg>",
+    "checks": {
+      "Valid SVG": true,
+      "Inside canvas": true,
+      "Title & labels": true,
+      "Animated": true,
+      "Safe elements": true
+    },
+    "passed": true,
+    "inputTokens": null,
+    "outputTokens": null,
+    "cost": null,
+    "retries": 0,
+    "attempts": []
+  },
+  {
+    "id": "circuit",
+    "revision": "reference-v1",
+    "source": "Reference",
+    "model": null,
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 240\"><title>Series circuit</title><line x1=\"96\" y1=\"65\" x2=\"252\" y2=\"65\" stroke=\"#233e4a\" stroke-width=\"3\"/><line x1=\"265\" y1=\"65\" x2=\"470\" y2=\"65\" stroke=\"#233e4a\" stroke-width=\"3\"/><line x1=\"470\" y1=\"65\" x2=\"470\" y2=\"178\" stroke=\"#233e4a\" stroke-width=\"3\"/><line x1=\"96\" y1=\"178\" x2=\"193\" y2=\"178\" stroke=\"#233e4a\" stroke-width=\"3\"/><line x1=\"235\" y1=\"178\" x2=\"336\" y2=\"178\" stroke=\"#233e4a\" stroke-width=\"3\"/><line x1=\"378\" y1=\"178\" x2=\"470\" y2=\"178\" stroke=\"#233e4a\" stroke-width=\"3\"/><line x1=\"96\" y1=\"65\" x2=\"96\" y2=\"178\" stroke=\"#233e4a\" stroke-width=\"3\"/><line x1=\"252\" y1=\"43\" x2=\"252\" y2=\"87\" stroke=\"#233e4a\" stroke-width=\"5\"/><line x1=\"265\" y1=\"53\" x2=\"265\" y2=\"77\" stroke=\"#233e4a\" stroke-width=\"5\"/><text x=\"228\" y=\"31\" font-size=\"16\" fill=\"#233e4a\">cell</text><text x=\"96\" y=\"211\" font-size=\"16\" fill=\"#233e4a\">one loop</text><text x=\"346\" y=\"106\" font-size=\"15\" fill=\"#233e4a\">same current</text><circle cx=\"214\" cy=\"178\" r=\"21\" fill=\"#fff0bf\" stroke=\"#a67529\" stroke-width=\"3\"><animate attributeName=\"opacity\" values=\"1;0.35;1\" dur=\"2.8s\" repeatCount=\"indefinite\"/></circle><line x1=\"200\" y1=\"164\" x2=\"228\" y2=\"192\" stroke=\"#a67529\" stroke-width=\"3\"/><line x1=\"200\" y1=\"192\" x2=\"228\" y2=\"164\" stroke=\"#a67529\" stroke-width=\"3\"/><circle cx=\"357\" cy=\"178\" r=\"21\" fill=\"#fff0bf\" stroke=\"#a67529\" stroke-width=\"3\"><animate attributeName=\"opacity\" values=\"1;0.35;1\" dur=\"2.8s\" repeatCount=\"indefinite\"/></circle><line x1=\"343\" y1=\"164\" x2=\"371\" y2=\"192\" stroke=\"#a67529\" stroke-width=\"3\"/><line x1=\"343\" y1=\"192\" x2=\"371\" y2=\"164\" stroke=\"#a67529\" stroke-width=\"3\"/><text x=\"254\" y=\"212\" font-size=\"16\" fill=\"#233e4a\">two lamps</text></svg>",
+    "checks": {
+      "Valid SVG": true,
+      "Inside canvas": true,
+      "Title & labels": true,
+      "Animated": true,
+      "Safe elements": true
+    },
+    "passed": true,
+    "inputTokens": null,
+    "outputTokens": null,
+    "cost": null,
+    "retries": 0,
+    "attempts": []
+  },
+  {
+    "id": "photosynthesis",
+    "revision": "reference-v1",
+    "source": "Reference",
+    "model": null,
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 240\"><title>Photosynthesis</title><polygon points=\"244,144 246,101 269,74 319,63 352,68 339,107 312,139 270,150\" fill=\"#96d6a2\" stroke=\"#187967\" stroke-width=\"3\"/><line x1=\"226\" y1=\"161\" x2=\"331\" y2=\"79\" stroke=\"#187967\" stroke-width=\"3\"/><text x=\"225\" y=\"188\" font-size=\"16\" fill=\"#233e4a\">chlorophyll</text><circle cx=\"182\" cy=\"44\" r=\"18\" fill=\"#f4c758\" stroke=\"none\" stroke-width=\"3\"><animate attributeName=\"opacity\" values=\"1;0.35;1\" dur=\"2.8s\" repeatCount=\"indefinite\"/></circle><text x=\"207\" y=\"48\" font-size=\"16\" fill=\"#233e4a\">light energy</text><line x1=\"232\" y1=\"55\" x2=\"259\" y2=\"79\" stroke=\"#a67529\" stroke-width=\"3\"/><text x=\"14\" y=\"107\" font-size=\"14\" fill=\"#233e4a\">carbon dioxide</text><line x1=\"151\" y1=\"103\" x2=\"230\" y2=\"103\" stroke=\"#187967\" stroke-width=\"3\"/><line x1=\"222\" y1=\"98\" x2=\"230\" y2=\"103\" stroke=\"#187967\" stroke-width=\"3\"/><line x1=\"222\" y1=\"108\" x2=\"230\" y2=\"103\" stroke=\"#187967\" stroke-width=\"3\"/><text x=\"65\" y=\"144\" font-size=\"16\" fill=\"#233e4a\">water</text><line x1=\"151\" y1=\"139\" x2=\"230\" y2=\"139\" stroke=\"#187967\" stroke-width=\"3\"/><line x1=\"222\" y1=\"134\" x2=\"230\" y2=\"139\" stroke=\"#187967\" stroke-width=\"3\"/><line x1=\"222\" y1=\"144\" x2=\"230\" y2=\"139\" stroke=\"#187967\" stroke-width=\"3\"/><line x1=\"353\" y1=\"95\" x2=\"398\" y2=\"95\" stroke=\"#187967\" stroke-width=\"3\"/><line x1=\"390\" y1=\"90\" x2=\"398\" y2=\"95\" stroke=\"#187967\" stroke-width=\"3\"/><line x1=\"390\" y1=\"100\" x2=\"398\" y2=\"95\" stroke=\"#187967\" stroke-width=\"3\"/><text x=\"411\" y=\"102\" font-size=\"16\" fill=\"#233e4a\">glucose</text><line x1=\"353\" y1=\"130\" x2=\"398\" y2=\"130\" stroke=\"#187967\" stroke-width=\"3\"/><line x1=\"390\" y1=\"125\" x2=\"398\" y2=\"130\" stroke=\"#187967\" stroke-width=\"3\"/><line x1=\"390\" y1=\"135\" x2=\"398\" y2=\"130\" stroke=\"#187967\" stroke-width=\"3\"/><text x=\"411\" y=\"139\" font-size=\"16\" fill=\"#233e4a\">oxygen</text></svg>",
+    "checks": {
+      "Valid SVG": true,
+      "Inside canvas": true,
+      "Title & labels": true,
+      "Animated": true,
+      "Safe elements": true
+    },
+    "passed": true,
+    "inputTokens": null,
+    "outputTokens": null,
+    "cost": null,
+    "retries": 0,
+    "attempts": []
+  },
+  {
+    "id": "matter",
+    "revision": "reference-v1",
+    "source": "Reference",
+    "model": null,
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 240\"><title>States of matter</title><rect x=\"24\" y=\"44\" width=\"164\" height=\"130\" fill=\"#e8eefb\" stroke=\"none\" stroke-width=\"3\"></rect><circle cx=\"63\" cy=\"99\" r=\"7\" fill=\"#375fbb\" stroke=\"none\" stroke-width=\"3\"><animate attributeName=\"cx\" values=\"63;65;63;61;63\" dur=\"1.1s\" repeatCount=\"indefinite\"/><animate attributeName=\"cy\" values=\"99;100;99;98;99\" dur=\"1.1s\" repeatCount=\"indefinite\"/></circle><circle cx=\"83\" cy=\"99\" r=\"7\" fill=\"#375fbb\" stroke=\"none\" stroke-width=\"3\"><animate attributeName=\"cx\" values=\"83;85;83;81;83\" dur=\"1.1s\" repeatCount=\"indefinite\"/><animate attributeName=\"cy\" values=\"99;100;99;98;99\" dur=\"1.1s\" repeatCount=\"indefinite\"/></circle><circle cx=\"103\" cy=\"99\" r=\"7\" fill=\"#375fbb\" stroke=\"none\" stroke-width=\"3\"><animate attributeName=\"cx\" values=\"103;105;103;101;103\" dur=\"1.1s\" repeatCount=\"indefinite\"/><animate attributeName=\"cy\" values=\"99;100;99;98;99\" dur=\"1.1s\" repeatCount=\"indefinite\"/></circle><circle cx=\"63\" cy=\"119\" r=\"7\" fill=\"#375fbb\" stroke=\"none\" stroke-width=\"3\"><animate attributeName=\"cx\" values=\"63;65;63;61;63\" dur=\"1.1s\" repeatCount=\"indefinite\"/><animate attributeName=\"cy\" values=\"119;120;119;118;119\" dur=\"1.1s\" repeatCount=\"indefinite\"/></circle><circle cx=\"83\" cy=\"119\" r=\"7\" fill=\"#375fbb\" stroke=\"none\" stroke-width=\"3\"><animate attributeName=\"cx\" values=\"83;85;83;81;83\" dur=\"1.1s\" repeatCount=\"indefinite\"/><animate attributeName=\"cy\" values=\"119;120;119;118;119\" dur=\"1.1s\" repeatCount=\"indefinite\"/></circle><circle cx=\"103\" cy=\"119\" r=\"7\" fill=\"#375fbb\" stroke=\"none\" stroke-width=\"3\"><animate attributeName=\"cx\" values=\"103;105;103;101;103\" dur=\"1.1s\" repeatCount=\"indefinite\"/><animate attributeName=\"cy\" values=\"119;120;119;118;119\" dur=\"1.1s\" repeatCount=\"indefinite\"/></circle><circle cx=\"63\" cy=\"139\" r=\"7\" fill=\"#375fbb\" stroke=\"none\" stroke-width=\"3\"><animate attributeName=\"cx\" values=\"63;65;63;61;63\" dur=\"1.1s\" repeatCount=\"indefinite\"/><animate attributeName=\"cy\" values=\"139;140;139;138;139\" dur=\"1.1s\" repeatCount=\"indefinite\"/></circle><circle cx=\"83\" cy=\"139\" r=\"7\" fill=\"#375fbb\" stroke=\"none\" stroke-width=\"3\"><animate attributeName=\"cx\" values=\"83;85;83;81;83\" dur=\"1.1s\" repeatCount=\"indefinite\"/><animate attributeName=\"cy\" values=\"139;140;139;138;139\" dur=\"1.1s\" repeatCount=\"indefinite\"/></circle><circle cx=\"103\" cy=\"139\" r=\"7\" fill=\"#375fbb\" stroke=\"none\" stroke-width=\"3\"><animate attributeName=\"cx\" values=\"103;105;103;101;103\" dur=\"1.1s\" repeatCount=\"indefinite\"/><animate attributeName=\"cy\" values=\"139;140;139;138;139\" dur=\"1.1s\" repeatCount=\"indefinite\"/></circle><text x=\"38\" y=\"201\" font-size=\"18\" fill=\"#233e4a\">Solid</text><rect x=\"214\" y=\"44\" width=\"164\" height=\"130\" fill=\"#dff3ed\" stroke=\"none\" stroke-width=\"3\"></rect><circle cx=\"256\" cy=\"129\" r=\"7\" fill=\"#187967\" stroke=\"none\" stroke-width=\"3\"><animate attributeName=\"cx\" values=\"256;248;256;264;256\" dur=\"3.3s\" repeatCount=\"indefinite\"/><animate attributeName=\"cy\" values=\"129;134;129;124;129\" dur=\"3.3s\" repeatCount=\"indefinite\"/></circle><circle cx=\"276\" cy=\"123\" r=\"7\" fill=\"#187967\" stroke=\"none\" stroke-width=\"3\"><animate attributeName=\"cx\" values=\"276;268;276;284;276\" dur=\"3.3s\" repeatCount=\"indefinite\"/><animate attributeName=\"cy\" values=\"123;128;123;118;123\" dur=\"3.3s\" repeatCount=\"indefinite\"/></circle><circle cx=\"300\" cy=\"128\" r=\"7\" fill=\"#187967\" stroke=\"none\" stroke-width=\"3\"><animate attributeName=\"cx\" values=\"300;292;300;308;300\" dur=\"3.3s\" repeatCount=\"indefinite\"/><animate attributeName=\"cy\" values=\"128;133;128;123;128\" dur=\"3.3s\" repeatCount=\"indefinite\"/></circle><circle cx=\"264\" cy=\"148\" r=\"7\" fill=\"#187967\" stroke=\"none\" stroke-width=\"3\"><animate attributeName=\"cx\" values=\"264;256;264;272;264\" dur=\"3.3s\" repeatCount=\"indefinite\"/><animate attributeName=\"cy\" values=\"148;153;148;143;148\" dur=\"3.3s\" repeatCount=\"indefinite\"/></circle><circle cx=\"287\" cy=\"145\" r=\"7\" fill=\"#187967\" stroke=\"none\" stroke-width=\"3\"><animate attributeName=\"cx\" values=\"287;295;287;279;287\" dur=\"3.3s\" repeatCount=\"indefinite\"/><animate attributeName=\"cy\" values=\"145;150;145;140;145\" dur=\"3.3s\" repeatCount=\"indefinite\"/></circle><circle cx=\"308\" cy=\"149\" r=\"7\" fill=\"#187967\" stroke=\"none\" stroke-width=\"3\"><animate attributeName=\"cx\" values=\"308;300;308;316;308\" dur=\"3.3s\" repeatCount=\"indefinite\"/><animate attributeName=\"cy\" values=\"149;154;149;144;149\" dur=\"3.3s\" repeatCount=\"indefinite\"/></circle><circle cx=\"318\" cy=\"130\" r=\"7\" fill=\"#187967\" stroke=\"none\" stroke-width=\"3\"><animate attributeName=\"cx\" values=\"318;310;318;326;318\" dur=\"3.3s\" repeatCount=\"indefinite\"/><animate attributeName=\"cy\" values=\"130;135;130;125;130\" dur=\"3.3s\" repeatCount=\"indefinite\"/></circle><text x=\"228\" y=\"201\" font-size=\"18\" fill=\"#233e4a\">Liquid</text><rect x=\"404\" y=\"44\" width=\"164\" height=\"130\" fill=\"#fbefd7\" stroke=\"none\" stroke-width=\"3\"></rect><circle cx=\"443\" cy=\"89\" r=\"7\" fill=\"#a67529\" stroke=\"none\" stroke-width=\"3\"><animate attributeName=\"cx\" values=\"443;467;443;419;443\" dur=\"1.6s\" repeatCount=\"indefinite\"/><animate attributeName=\"cy\" values=\"89;107;89;71;89\" dur=\"1.6s\" repeatCount=\"indefinite\"/></circle><circle cx=\"504\" cy=\"100\" r=\"7\" fill=\"#a67529\" stroke=\"none\" stroke-width=\"3\"><animate attributeName=\"cx\" values=\"504;480;504;528;504\" dur=\"1.6s\" repeatCount=\"indefinite\"/><animate attributeName=\"cy\" values=\"100;118;100;82;100\" dur=\"1.6s\" repeatCount=\"indefinite\"/></circle><circle cx=\"472\" cy=\"146\" r=\"7\" fill=\"#a67529\" stroke=\"none\" stroke-width=\"3\"><animate attributeName=\"cx\" values=\"472;448;472;496;472\" dur=\"1.6s\" repeatCount=\"indefinite\"/><animate attributeName=\"cy\" values=\"146;164;146;128;146\" dur=\"1.6s\" repeatCount=\"indefinite\"/></circle><circle cx=\"520\" cy=\"152\" r=\"7\" fill=\"#a67529\" stroke=\"none\" stroke-width=\"3\"><animate attributeName=\"cx\" values=\"520;496;520;544;520\" dur=\"1.6s\" repeatCount=\"indefinite\"/><animate attributeName=\"cy\" values=\"152;170;152;134;152\" dur=\"1.6s\" repeatCount=\"indefinite\"/></circle><text x=\"418\" y=\"201\" font-size=\"18\" fill=\"#233e4a\">Gas</text></svg>",
+    "checks": {
+      "Valid SVG": true,
+      "Inside canvas": true,
+      "Title & labels": true,
+      "Animated": true,
+      "Safe elements": true
+    },
+    "passed": true,
+    "inputTokens": null,
+    "outputTokens": null,
+    "cost": null,
+    "retries": 0,
+    "attempts": []
+  }
+]
