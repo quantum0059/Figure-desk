@@ -40,5 +40,13 @@ const table = [
 ].join("\n");
 await writeFile(
   "README.md",
-  readme.replace(/<!-- results-start -->[\s\S]*?<!-- results-end -->/, table),
+  readme
+    .replace(/<!-- results-start -->[\s\S]*?<!-- results-end -->/, table)
+    .replace(
+      /<!-- generation-status-start -->[\s\S]*?<!-- generation-status-end -->/,
+      "<!-- generation-status-start -->\n" +
+        "The five saved diagrams were generated with Gemini and validated by the code checks. " +
+        "Inspect their scientific accuracy and animation in the browser before submission.\n" +
+        "<!-- generation-status-end -->",
+    ),
 );

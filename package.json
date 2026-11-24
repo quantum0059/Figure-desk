@@ -8,6 +8,7 @@
     "build": "next build --webpack",
     "start": "next start",
     "generate": "node --env-file-if-exists=.env.local scripts/generate.mjs",
+    "submission:check": "node scripts/verify-submission.mjs",
     "build:site": "npm run build && node scripts/pack-worker.mjs && node scripts/check-build.mjs"
   },
   "license": "ISC",

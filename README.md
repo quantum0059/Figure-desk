@@ -16,7 +16,9 @@ Open http://localhost:3000. On Windows PowerShell, use `Copy-Item .env.example .
 
 ## Saved results
 
+<!-- generation-status-start -->
 This checkout starts with five authored reference illustrations so the entire review flow is usable offline. No Gemini key was supplied during development. Their model usage and estimated cost are unknown or inapplicable. A complete assignment submission needs the actual five Gemini results.
+<!-- generation-status-end -->
 
 <!-- results-start -->
 | Concept | Source | Checks | Estimated USD | Retries |
@@ -34,10 +36,11 @@ With your key configured, run the following before submitting.
 npm run generate
 npm test
 npm run build
+npm run submission:check
 npm start
 ```
 
-The batch contacts Gemini sequentially, replaces results.json only after all five concepts pass, and updates the table above. Inspect the animation and scientific content of each diagram, then commit results.json and README.md. For Vercel, import the GitHub repo as a Next.js project, add the same server environment variables, and deploy. Confirm the reviewer can open the URL signed out. Hand in the deployed URL and the GitHub repository.
+The batch contacts Gemini sequentially, replaces results.json only after all five concepts pass, and updates the table and generation status above. `submission:check` confirms the five saved results came from Gemini, have usage logs and valid SVGs, and that a GitHub origin is configured. Inspect the animation and scientific content of each diagram in the browser, then commit results.json and README.md. For Vercel, import the GitHub repo as a Next.js project, add the same server environment variables, and deploy. Confirm the reviewer can open the URL signed out and Generate works on that deployment. Hand in the deployed URL and the GitHub repository.
 
 ## How generation works
 
