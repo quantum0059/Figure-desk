@@ -87,6 +87,31 @@ test("success records measured cost and no retry", async () => {
   assert.equal(r.outputTokens, 250);
   assert.equal(h.logs.length, 1);
 });
+test("Groq uses its chat endpoint and token usage when its key is set", async () => {
+  let called;
+  const result = await generate(
+    concepts[0],
+    { GROQ_API_KEY: "fake", GEMINI_API_KEY: "other" },
+    {
+      request: async (url, init) => {
+        called = { url, init };
+        return Response.json({
+          choices: [{ message: { content: svg } }],
+          usage: { prompt_tokens: 120, completion_tokens: 340 },
+        });
+      },
+      log: () => {},
+    },
+  );
+  assert.equal(result.source, "Groq");
+  assert.equal(result.model, "openai/gpt-oss-120b");
+  assert.equal(result.inputTokens, 120);
+  assert.equal(result.outputTokens, 340);
+  assert.equal(result.passed, true);
+  assert.match(called.url, /api\.groq\.com\/openai\/v1\/chat\/completions/);
+  assert.equal(called.init.headers.Authorization, "Bearer fake");
+  assert.equal(JSON.parse(called.init.body).messages[0].role, "user");
+});
 test("repair includes failed checks and both attempts count toward cost", async () => {
   const h = harness([invalid, valid]);
   const r = await h.run();

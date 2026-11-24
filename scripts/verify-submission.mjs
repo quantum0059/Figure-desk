@@ -14,8 +14,8 @@ if (!Array.isArray(rows) || rows.length !== concepts.length) {
     const row = rows[index];
     const label = concept.title;
     if (row?.id !== concept.id) problems.push(`${label}: wrong or missing concept ID.`);
-    if (row?.source !== "Gemini" || !row.model)
-      problems.push(`${label}: replace the reference with a Gemini result.`);
+    if (row?.source !== "Groq" || !row.model)
+      problems.push(`${label}: replace the reference with a Groq result.`);
     if (!Number.isFinite(row?.inputTokens) || row.inputTokens <= 0 ||
         !Number.isFinite(row?.outputTokens) || row.outputTokens <= 0 ||
         !Number.isFinite(row?.cost) || row.cost < 0 ||
@@ -33,7 +33,7 @@ if (!Array.isArray(rows) || rows.length !== concepts.length) {
 
 if (!readme.includes("<!-- results-start -->") ||
     !readme.includes("<!-- results-end -->") ||
-    readme.includes("No Gemini key was supplied during development"))
+    readme.includes("These are not the five final AI results"))
   problems.push("README.md still describes the reference-only state.");
 
 try {
@@ -52,6 +52,6 @@ if (problems.length) {
   console.error("Submission checks failed:\n- " + problems.join("\n- "));
   process.exitCode = 1;
 } else {
-  console.log("Saved Gemini results, metadata, README, and GitHub origin are ready.");
+  console.log("Saved Groq results, metadata, README, and GitHub origin are ready.");
   console.log("Final manual checks: live public URL, Generate button, diagram accuracy, and submitted links.");
 }
