@@ -2,6 +2,8 @@
 
 A Next.js review workspace for five animated UK GCSE diagrams. The first page is built from the committed results.json and opens without contacting an AI provider. Select a concept and click **Generate** to run the server-side pipeline. Each live result gets its own review history.
 
+Live app: [Figure Desk](https://figure-desk-science-lab.roundpassionflower16.chatgpt.site) (public, no sign-in).
+
 ## Run locally
 
 Use Node.js 22.13 or later and npm.
@@ -39,7 +41,7 @@ npm run submission:check
 npm start
 ```
 
-The batch contacts the selected provider sequentially and checkpoints successful concepts in an ignored `results.progress.json` so a timeout can be resumed. It replaces results.json only after all five concepts pass, then updates the table and generation status above. `submission:check` confirms the five saved results came from Groq, have usage logs and valid SVGs, and that a GitHub origin is configured. Inspect the animation and scientific content of each diagram in the browser, then commit results.json and README.md. For Vercel, import the GitHub repo as a Next.js project, add `GROQ_API_KEY` as a server environment variable, and deploy. Confirm the reviewer can open the URL signed out and Generate works on that deployment. Hand in the deployed URL and the GitHub repository.
+The batch contacts the selected provider sequentially and checkpoints successful concepts in an ignored `results.progress.json` so a timeout can be resumed. It replaces results.json only after all five concepts pass, then updates the table and generation status above. `submission:check` confirms the five saved results came from Groq, have usage logs and valid SVGs, and that a GitHub origin is configured. The current public deployment uses ChatGPT Sites with `GROQ_API_KEY` stored as a server secret. Its signed-out page and live Generate endpoint were both verified. If redeploying elsewhere, configure the same server environment variable and test the public URL again. Submit the live app URL and the [GitHub repository](https://github.com/quantum0059/Figure-desk).
 
 ## How generation works
 
