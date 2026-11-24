@@ -1,0 +1,30 @@
+{
+  "name": "figure-desk",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "node --import tsx --test tests/*.test.mjs",
+    "dev": "node scripts/dev.mjs",
+    "build": "next build --webpack",
+    "start": "next start",
+    "generate": "node --env-file-if-exists=.env.local scripts/generate.mjs",
+    "build:site": "npm run build && node scripts/pack-worker.mjs"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.28.2",
+    "next": "^16.4.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "saxes": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.3",
+    "jsdom": "^31.0.1",
+    "tsx": "^4.23.15"
+  },
+  "private": true
+}
