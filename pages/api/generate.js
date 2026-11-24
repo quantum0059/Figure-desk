@@ -1,6 +1,6 @@
 import { handleGenerate } from "../../lib/api.mjs";
 export const config = {
-  maxDuration: 180,
+  maxDuration: 60,
   api: { bodyParser: { sizeLimit: "2kb" } },
 };
 export default async function handler(req, res) {
